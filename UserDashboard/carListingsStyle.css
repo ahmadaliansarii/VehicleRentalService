@@ -1,0 +1,75 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.filters-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    background-color: #e7dfdf;
+    border-bottom: 1px solid #ddd;
+    width: 25%;
+    height: fit-content;
+    margin-top: 20px;
+    border-radius: 10px;
+    position: sticky;
+    top: 100px;
+    z-index: 1000;
+}
+
+.filters-container label {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.filters-container select,
+.filters-container input[type="checkbox"] {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.vehicle-cards {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.vehicle-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.vehicle-card:hover {
+    transform: scale(1.05);
+}
+
+.vehicle-card .card-details {
+    padding: 15px;
+}
+
+.vehicle-card .card-details h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.vehicle-card .card-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+#availabilityFilter, #checkkk {
+    cursor: pointer;
+}

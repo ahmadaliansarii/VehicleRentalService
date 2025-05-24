@@ -1,0 +1,62 @@
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.Headings{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: auto;
+}
+
+#adminsTable, #customersTable {     
+    width: 100%;     
+    border-collapse: collapse;     
+    margin: 20px 0;     
+    font-size: 16px;     
+    text-align: left; 
+}
+
+#adminsTable th, #adminsTable td, #customersTable th, #customersTable td {     
+    text-align: center;     
+    padding: 12px 15px;     
+    border: 1px solid #ddd; 
+}
+
+#adminsTable th, #customersTable th {     
+    background-color: #3498db;     
+    color: white;     
+    font-weight: bold; 
+}
+
+#adminsTable tr:nth-child(even), #customersTable tr:nth-child(even) {     
+    background-color: #f9f9f9; 
+}
+
+#adminsTable tr:hover, #customersTable tr:hover {     
+    background-color: #f1f1f1; 
+}
+
+.role-header td {     
+    background-color: #f0f0f0;     
+    font-size: 18px;     
+    font-weight: bold;     
+    text-align: left;     
+    padding: 10px;     
+    border: none; 
+}
+
+.btn-detail {     
+    background-color: #a7288c;     
+    color: white;     
+    border: none;     
+    padding: 10px;     
+    cursor: pointer;     
+    border-radius: 5px;     
+    font-size: 14px;     
+    margin-right: 10px; 
+}
+
+.btn-detail:hover {     
+    background-color: #4d0d3e; 
+}

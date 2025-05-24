@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="LoginStyle.css">
+</head>
+<body>
+    <h1>Vehicle Rental Service</h1>
+    <form id="signupForm">
+        <h2>Sign Up</h2>
+        <label for="role">Role:</label>
+        <select id="role" name="role" required>
+            <option value="Customer" selected>Customer</option>
+            <option value="Admin">Admin</option>
+        </select>
+
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" id="phone_number" name="phone_number" placeholder="Enter your phone number" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <button type="submit">Sign Up</button>
+        <p><a href="login.html">Already have an account? Log in here</a></p>
+    </form>
+    <script src="/AdminDashboard/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Maintenance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="post_maintainanceStyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-left">Vehicle Rental System | Admin Dashboard</a>
+        <div class="navbar-right">
+            <div class="admin-name">
+                <span id="adminName"></span>
+                <button class="dropdown-btn">▼</button>
+                <div class="dropdown">
+                    <div class="dropdown-content">
+                        <a href="change_password.html">Change Password</a>
+                        <a href="#" onclick="logout()">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <a href="index.html">Dashboard</a>
+        <a href="post_vehicle.html">Post a Vehicle</a>
+        <a href="manage_vehicles.html">Manage Vehicles</a>
+        <a href="post_maintainance.html" class="active">Post Maintainance</a>
+        <a href="manage_maintenance.html">Vehicle Maintenance</a>
+        <a href="new_bookings.html">New Bookings</a>
+        <a href="confirmed_bookings.html">Confirmed Bookings</a>
+        <a href="manage_payments.html">Manage Payments</a>
+        <a href="post_insurance.html">Post Insurance</a>
+        <a href="manage_insurances.html">Manage Insurances</a>
+        <a href="manage_feedbacks.html">Manage Feedbacks</a>
+        <a href="manage_users.html">Manage Users</a>
+        <a href="manage_reports.html">Generate Reports</a>
+    </div>
+
+    <div class="main-content">
+        <h1>Post Maintenance</h1>
+        <form id="postMaintenanceForm">
+            <label for="vehicle_id">Vehicle ID:</label>
+            <input type="number" id="vehicle_id" name="vehicle_id" min="1" required><br>
+
+            <label for="service_date">Service Date:</label>
+            <input type="date" id="service_date" name="service_date" required><br>
+
+            <label for="details">Details:</label>
+            <textarea id="details" name="details" rows="3" maxlength="255" required></textarea><br>
+
+            <label for="cost">Cost:</label>
+            <input type="number" id="cost" name="cost" step="0.01" min="0" required><br>
+
+            <button type="submit">Post Maintenance</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+#reservationsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+#reservationsTable th {
+    text-align: center;
+}
+
+#reservationsTable th, #reservationsTable td {
+    text-align: center;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+#reservationsTable th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
+#reservationsTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#reservationsTable tr:hover {
+    background-color: #f1f1f1;
+}

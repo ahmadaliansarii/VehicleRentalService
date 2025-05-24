@@ -1,0 +1,81 @@
+.vehicle-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.vehicle-details h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.vehicle-details p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+.vehicle-details .highlight {
+    font-weight: bold;
+    color: #555;
+}
+
+.booking-form-container {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 50%;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.booking-form-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.booking-form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-form-container label {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+
+.booking-form-container input,
+.booking-form-container textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form-container button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-form-container button:hover {
+    background-color: #218838;
+}

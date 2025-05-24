@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.Logogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.logo {
+    background-image: url("/UserDashboard/Pics/logo.png");
+    width: 100px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logoLinkMain{
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+.logoLinkMain:hover{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.contact-us-btn {
+    background-color: #f04f47;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sec-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+}
+
+.sec-navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.sec-navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.sec-navbar a:hover{
+    color: #f04f47;
+    text-decoration: none;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.user-name {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-btn {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.user-name:hover .dropdown-content {
+    display: block;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+.heroText{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    color: white;
+    font-size: 4rem;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.avlCars{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.car-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+    align-items: center;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.logoDivFoot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.logoLink{
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+.logoLink:hover{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    flex: 1;
+    justify-content: center;
+}
+.search-input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+    min-width: 800px; /* Increased width */
+    outline: none;
+}
+.search-btn {
+    padding: 8px 16px;
+    border: none;
+    background-color: #f04f47;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.search-btn:hover {
+    background-color: #c0392b;
+}

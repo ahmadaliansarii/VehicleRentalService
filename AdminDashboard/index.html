@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Rental System | Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="indexStyle.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-left">Vehicle Rental System | Admin Dashboard</a>
+        <div class="navbar-right">
+            <div class="admin-name">
+                <span id="adminName"></span>
+                <button class="dropdown-btn">▼</button>
+                <div class="dropdown">
+                    <div class="dropdown-content">
+                        <a href="change_password.html">Change Password</a>
+                        <a href="#" onclick="logout()">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <a href="index.html" class="active">Dashboard</a>
+        <a href="post_vehicle.html">Post a Vehicle</a>
+        <a href="manage_vehicles.html">Manage Vehicles</a>
+        <a href="post_maintainance.html">Post Maintainance</a>
+        <a href="manage_maintenance.html">Vehicle Maintenance</a>
+        <a href="new_bookings.html">New Bookings</a>
+        <a href="confirmed_bookings.html">Confirmed Bookings</a>
+        <a href="manage_payments.html">Manage Payments</a>
+        <a href="post_insurance.html">Post Insurance</a>
+        <a href="manage_insurances.html">Manage Insurances</a>
+        <a href="manage_feedbacks.html">Manage Feedbacks</a>
+        <a href="manage_users.html">Manage Users</a>
+        <a href="manage_reports.html">Generate Reports</a>
+    </div>
+
+    <div class="main-content">
+        <h1>Welcome to the Admin Dashboard</h1>
+        <div class="dashboard-grid">
+            <div class="card" onclick="window.location.href='manage_vehicles.html'">
+                <div class="card-count" id="vehicleCount">0</div>
+                <div class="card-description">Registered Vehicles</div>
+            </div>
+            <div class="card" onclick="window.location.href='manage_maintenance.html'">
+                <div class="card-count" id="maintenanceCount">0</div>
+                <div class="card-description">Vehicle Maintenance</div>
+            </div>
+            <div class="card" onclick="window.location.href='new_bookings.html'">
+                <div class="card-count" id="newBookingsCount">0</div>
+                <div class="card-description">New Bookings</div>
+            </div>
+            <div class="card" onclick="window.location.href='confirmed_bookings.html'">
+                <div class="card-count" id="confirmedBookingsCount">0</div>
+                <div class="card-description">Confirmed Bookings</div>
+            </div>
+            <div class="card" onclick="window.location.href='manage_insurances.html'">
+                <div class="card-count" id="insuranceCount">0</div>
+                <div class="card-description">Insurances</div>
+            </div>
+            <div class="card" onclick="window.location.href='manage_feedbacks.html'">
+                <div class="card-count" id="feedbackCount">0</div>
+                <div class="card-description">Feedbacks</div>
+            </div>
+            <div class="card" onclick="window.location.href='manage_users.html'">
+                <div class="card-count" id="customerCount">0</div>
+                <div class="card-description">Customers</div>
+            </div>
+            <div class="card" onclick="window.location.href='manage_users.html'">
+                <div class="card-count" id="adminCount">0</div>
+                <div class="card-description">Admins</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

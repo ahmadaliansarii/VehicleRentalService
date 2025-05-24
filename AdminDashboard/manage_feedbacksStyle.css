@@ -1,0 +1,41 @@
+#feedbacksTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+#feedbacksTable th, #feedbacksTable td {
+    text-align: center;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+#feedbacksTable th {
+    background-color: #1abc9c;
+    color: white;
+    font-weight: bold;
+}
+
+#feedbacksTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#feedbacksTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+.read-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.read-btn:hover {
+    background-color: #0056b3;
+}

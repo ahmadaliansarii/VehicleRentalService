@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Dashboard</title>
+    <link rel="stylesheet" href="mainDashboardStyle.css">
+    <link rel="stylesheet" href="aboutUsStyle.css">
+</head>
+<body>
+    <nav class="main-navbar">
+        <a href="mainDashboard.html" class="logoLinkMain">
+            <div class="Logogo">
+                <div class="logo"></div>
+                <div>Vehicle Rental System</div>
+            </div>
+        </a>
+        <div class="search-bar-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="Search by brand or model...">
+            <button class="search-btn" onclick="handleCarSearch()">Search</button>
+        </div>
+        <button class="contact-us-btn" onclick="openAboutUs()">Contact Us</button>
+    </nav>
+
+
+    <nav class="sec-navbar">
+        <ul>
+            <li><a href="mainDashboard.html">Home</a></li>
+            <li><a href="carListings.html">Car Listings</a></li>
+            <li><a href="allBookings.html">Bookings</a></li>
+            <li><a href="Feedbacks.html">Feedbacks</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+        </ul>        
+        <div class="navbar-right">
+            <div class="user-name">
+                <span id="userName"></span>
+                <button class="dropdown-btn">▼</button>
+                <div class="dropdown">
+                    <div class="dropdown-content">
+                        <a href="allBookings.html">Profile & Bookings</a>
+                        <a href="changePassword.html">Change Password</a>
+                        <a href="#" onclick="logout()">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero" style="background-image: url('/UserDashboard/Pics/car5.jpg');">
+        <div class="heroText">About Us</div>
+    </div>
+    <div class="aboutUsBox">
+        <div class="aboutUs">
+            <p>By</p>
+            <p>Ahmad Ali (22K-4385)</p>
+            <p>Sharjeel Ahmad (22K-4646)</p>
+        </div>
+    </div>
+    
+    <footer>
+        <a href="mainDashboard.html" class="logoLink">
+            <div class="logoDivFoot">
+                <div class="logo"></div>
+                <div>Vehicle Rental System</div>
+            </div>
+        </a>
+        <div>Made by AAA & SA</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

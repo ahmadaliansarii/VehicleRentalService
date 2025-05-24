@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #34495e;
+}
+
+.navbar {
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-left {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left:hover {
+    color: #c9c9c9;
+    text-decoration: underline;
+}
+
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.admin-name {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-btn {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.admin-name:hover .dropdown-content {
+    display: block;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #34495e;
+    color: white;
+    padding-top: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background-color: #1abc9c;
+}
+
+.main-content {
+    margin-left: 200px;
+    padding: 70px 20px;
+    flex: 1;
+}

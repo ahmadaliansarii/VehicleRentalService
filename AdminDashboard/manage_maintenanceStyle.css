@@ -1,0 +1,45 @@
+.main-content{
+    color: #34495e;
+}
+#maintenanceTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+#maintenanceTable th, #maintenanceTable td {
+    text-align: center;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+#maintenanceTable th {
+    background-color: #1abc9c;
+    color: white;
+    font-weight: bold;
+}
+
+#maintenanceTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#maintenanceTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.btn-delete:hover {
+    background-color: #c0392b;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Maintenance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="manage_maintenanceStyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-left">Vehicle Rental System | Admin Dashboard</a>
+        <div class="navbar-right">
+            <div class="admin-name">
+                <span id="adminName"></span>
+                <button class="dropdown-btn">▼</button>
+                <div class="dropdown">
+                    <div class="dropdown-content">
+                        <a href="change_password.html">Change Password</a>
+                        <a href="#" onclick="logout()">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <a href="index.html">Dashboard</a>
+        <a href="post_vehicle.html">Post a Vehicle</a>
+        <a href="manage_vehicles.html">Manage Vehicles</a>
+        <a href="post_maintainance.html">Post Maintainance</a>
+        <a href="manage_maintenance.html" class="active">Vehicle Maintenance</a>
+        <a href="new_bookings.html">New Bookings</a>
+        <a href="confirmed_bookings.html">Confirmed Bookings</a>
+        <a href="manage_payments.html">Manage Payments</a>
+        <a href="post_insurance.html">Post Insurance</a>
+        <a href="manage_insurances.html">Manage Insurances</a>
+        <a href="manage_feedbacks.html">Manage Feedbacks</a>
+        <a href="manage_users.html">Manage Users</a>
+        <a href="manage_reports.html">Generate Reports</a>
+    </div>
+
+    <div class="main-content">
+        <h2>Vehicle Maintenance Records</h2>
+        <table id="maintenanceTable">
+            <thead>
+                <tr>
+                    <th>Maintenance ID</th>
+                    <th>Vehicle ID</th>
+                    <th>Service Date</th>
+                    <th>Details</th>
+                    <th>Cost</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
