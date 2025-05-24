@@ -1,0 +1,39 @@
+# Node.js dependencies
+Server/node_modules/
+
+# Logs
+*.log
+Server/logs/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.*
+
+
+# VSCode settings
+.vscode/
+
+# Build output
+/dist/
+/build/
+
+# Misc
+*.tmp
+*.swp
+
+# Ignore image cache or temp files
+UserDashboard/Pics/*.tmp
+
+# Ignore package-lock and yarn lock if not needed
+Server/package-lock.json
+yarn.lock
+
+# Ignore compiled files (if any in future)
+*.out
+*.exe
+*.class
+*.pyc
